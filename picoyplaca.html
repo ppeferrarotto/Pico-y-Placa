@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pico y Placa</title>
+  </head>
+  <body>
+    <form  action="picoyplaca.php" method="post">
+      Ingrese el numero de Matricula de su vehiculo:
+      <input name="matricula"oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"type = "number"maxlength = "4"/><br>
+      Ingrese El dia de la semana:
+      <select name="semana">
+        <option value="lunes">Lunes</option>
+        <option value="martes">Martes</option>
+        <option value="miercoles">Miercoles</option>
+        <option value="jueves">Jueves</option>
+        <option value="viernes">Viernes</option>
+      </select><br>
+      Ingrese la hora:
+      <input type="time" name="tiempo">
+      <input type="time" name="tiempo1" value="07:00"style="visibility:hidden">
+      <input type="time" name="tiempo2" value="09:30"style="visibility:hidden">
+      <input type="time" name="tiempo3" value="16:00"style="visibility:hidden">
+      <input type="time" name="tiempo4" value="19:30"style="visibility:hidden"><br><br>
+      <input type="submit"  value="ir">
+    </form>
+
+  </body>
+</html>
